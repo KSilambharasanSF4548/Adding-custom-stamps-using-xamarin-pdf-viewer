@@ -4,19 +4,19 @@ This repository contains a sample application that demonstrates how to add, appl
 
 ## Overview
 
-The sample illustrates how custom stamp annotations can be implemented in a cross-platform Xamarin application. Custom stamps allow users to place predefined text, images, or approval indicators directly onto PDF pages, which is commonly required in document review, approval, and enterprise workflows.
+This sample illustrates how custom stamp annotations can be implemented in a cross-platform Xamarin application. Custom stamps enable users to place predefined text, images, or approval indicators directly onto PDF pages, which is a common requirement in document review, approval, and enterprise workflows.
 
-This repository focuses on a unified implementation approach while supporting platform-specific behaviors for Android, iOS, and UWP.
+The repository follows a unified implementation approach while supporting platform-specific behavior for Android, iOS, and UWP.
 
-## Platforms Supported
+## Supported Platforms
 
-The sample includes implementations for the following platforms:
+The sample supports the following platforms:
 
 - Android  
 - iOS  
-- UWP (Universal Windows Platform)  
+- UWP (Universal Windows Platform)
 
-Each platform project demonstrates consistent behavior while using the Xamarin PDF Viewer control.
+The functionality and behavior of custom stamp annotations are consistent across all supported platforms.
 
 ## Sample Structure
 
@@ -35,7 +35,7 @@ This sample showcases the following capabilities:
 
 - Creating custom stamp annotations programmatically  
 - Applying stamps to specific pages in a PDF document  
-- Accurately positioning and rendering stamps within the viewer  
+- Accurately positioning and rendering stamps within the PDF viewer  
 - Preserving custom stamps when saving and reopening PDF documents  
 - Using a shared codebase with platform-specific initialization  
 
@@ -57,17 +57,19 @@ Before running this sample, ensure you have the following:
 4. Set the desired platform project as the startup project.
 5. Build and run the application.
 
-Once the application is running, load a PDF document and apply a custom stamp using the implemented logic. The stamp will remain embedded even after saving and reopening the document.
+Once the application is running, load a PDF document and apply a custom stamp using the implemented logic. The stamp remains embedded even after saving and reopening the document.
 
 ## Use Cases
 
-This sample is helpful for developers who want to:
+This sample is useful for developers who want to:
 
 - Add approval or review stamps to PDF documents  
-- Implement document validation workflows  
-- Enhance PDF annotation functionality in Xamarin applications  
+- Implement document validation or approval workflows  
+- Enhance PDF annotation capabilities in Xamarin applications  
 - Understand cross-platform PDF annotation handling  
 
 ## Conclusion
 
-The **Adding Custom Stamps Using Xamarin PDF Viewer** sample provides a clear reference for implementing custom stamp annotations in Xamarin applications. It demonstrates real-world usage scenarios while maintaining code reuse and consistent behavior across Android, iOS, and UWP platforms.
+The Adding Custom Stamps Using Xamarin PDF Viewer sample provides a clear reference for implementing custom stamp annotations in Xamarin applications. It demonstrates real-world usage scenarios while maintaining code reuse and consistent behavior across Android, iOS, and UWP platforms.
+
+For more details, refer to the official Syncfusion [documentation](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/xamarin/overview) and [API reference](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.html).
