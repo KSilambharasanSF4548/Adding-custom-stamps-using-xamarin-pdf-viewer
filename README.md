@@ -1,74 +1,73 @@
-# Adding Custom Stamps Using Xamarin PDF Viewer
+# Adding-custom-stamps-using-xamarin-pdf-viewer
 
-This repository contains a sample that demonstrates adding custom stamps to a PDF using the Xamarin PDF Viewer.
+This repository contains a sample application that demonstrates how to add, apply, and preserve custom stamps in PDF documents using the Xamarin PDF Viewer.
 
 ## Overview
 
-This repository provides a complete sample application that demonstrates how to add, apply, and preserve custom stamps in PDF documents using the Xamarin PDF Viewer across multiple platforms. The sample showcases a unified approach to implementing custom stamp annotations while maintaining platform-specific configurations for Android, iOS, and UWP.
+The sample illustrates how custom stamp annotations can be implemented in a cross-platform Xamarin application. Custom stamps allow users to place predefined text, images, or approval indicators directly onto PDF pages, which is commonly required in document review, approval, and enterprise workflows.
 
-Custom stamps are commonly used in PDF workflows to place predefined text, images, or approval marks such as **Approved**, **Confidential**, **Reviewed**, or organization-specific branding directly onto PDF pages. This sample illustrates how such stamps can be created programmatically and integrated into a PDF viewing and editing experience using Xamarin.
+This repository focuses on a unified implementation approach while supporting platform-specific behaviors for Android, iOS, and UWP.
 
-## Platforms Covered
+## Platforms Supported
 
-The solution includes separate projects for the following platforms:
+The sample includes implementations for the following platforms:
 
 - Android  
 - iOS  
-- UWP (Universal Windows Platform)
+- UWP (Universal Windows Platform)  
 
-Each platform implementation demonstrates how to interact with the Xamarin PDF Viewer control and apply custom stamp annotations consistently across devices.
+Each platform project demonstrates consistent behavior while using the Xamarin PDF Viewer control.
 
 ## Sample Structure
 
-The repository contains the following key projects and files:
+The repository is organized as follows:
 
-- **CustomStamps.Android** – Android-specific implementation of custom PDF stamps  
-- **CustomStamps.iOS** – iOS-specific implementation of custom PDF stamps  
-- **CustomStamps.UWP** – UWP-specific implementation of custom PDF stamps  
-- **CustomStamps** – Shared code and logic used across all platforms  
+- **CustomStamps.Android** – Android-specific implementation  
+- **CustomStamps.iOS** – iOS-specific implementation  
+- **CustomStamps.UWP** – UWP-specific implementation  
+- **CustomStamps** – Shared logic and common functionality  
 - **CustomStamps.sln** – Visual Studio solution file  
-- **README.md** – Documentation describing the sample  
+- **README.md** – Documentation for the sample  
 
 ## Features Demonstrated
 
-This sample highlights the following functionalities:
+This sample showcases the following capabilities:
 
 - Creating custom stamp annotations programmatically  
 - Applying stamps to specific pages in a PDF document  
-- Positioning and rendering stamps accurately within the PDF viewer  
-- Preserving custom stamps when the PDF document is saved and reopened  
-- Handling platform-specific initialization for the Xamarin PDF Viewer  
-- Using shared business logic with platform-specific UI handling  
+- Accurately positioning and rendering stamps within the viewer  
+- Preserving custom stamps when saving and reopening PDF documents  
+- Using a shared codebase with platform-specific initialization  
 
 ## Prerequisites
 
 Before running this sample, ensure you have the following:
 
 - Visual Studio with Xamarin development workloads installed  
-- Windows 10 or later (for UWP development)  
-- Android SDK and an emulator or physical Android device  
-- macOS with Xcode installed (for iOS development)  
-- Xamarin PDF Viewer NuGet package properly referenced in the projects  
+- Android SDK with an emulator or physical device  
+- macOS with Xcode installed for iOS development  
+- Windows 10 or later for UWP development  
+- Xamarin PDF Viewer NuGet package referenced in all projects  
 
 ## Getting Started
 
-1. Clone or download this repository.
+1. Clone or download the repository.
 2. Open `CustomStamps.sln` in Visual Studio.
 3. Restore NuGet packages for all projects.
-4. Select the desired platform project (Android, iOS, or UWP) as the startup project.
+4. Set the desired platform project as the startup project.
 5. Build and run the application.
 
-When the application runs, load a PDF document and apply a custom stamp using the provided implementation. The sample demonstrates how the stamp remains embedded even after saving and reloading the PDF.
+Once the application is running, load a PDF document and apply a custom stamp using the implemented logic. The stamp will remain embedded even after saving and reopening the document.
 
 ## Use Cases
 
-This sample is useful for developers who want to:
+This sample is helpful for developers who want to:
 
 - Add approval or review stamps to PDF documents  
-- Implement document workflows in enterprise applications  
-- Customize PDF annotation experiences in Xamarin apps  
-- Understand cross-platform PDF annotation handling using Xamarin  
+- Implement document validation workflows  
+- Enhance PDF annotation functionality in Xamarin applications  
+- Understand cross-platform PDF annotation handling  
 
 ## Conclusion
 
-The **Adding Custom Stamps Using Xamarin PDF Viewer** sample provides a practical and extensible reference for integrating custom PDF stamps across Android, iOS, and UWP platforms. It demonstrates real-world usage of PDF annotations while maintaining code reuse and consistency through Xamarin’s shared project structure.
+The **Adding Custom Stamps Using Xamarin PDF Viewer** sample provides a clear reference for implementing custom stamp annotations in Xamarin applications. It demonstrates real-world usage scenarios while maintaining code reuse and consistent behavior across Android, iOS, and UWP platforms.
